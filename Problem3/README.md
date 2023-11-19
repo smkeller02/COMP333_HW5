@@ -1,16 +1,17 @@
-# COMP333_HW4
-Backend for our HW4 Frontend Mobile (React-Native)
+# COMP333_HW5_Problem3
+Problem 3 for HW5
 
 Sydney Keller (<smkeller@wesleyan.edu>)
 Minji Woo (<mwoo@wesleyan.edu>)
 
-
 # Purpose:
 Connect user to SQL database through REST API
+(for this HW specifically, it is the old backend from HW3 modified with unit tests)
 
 # Setting up the developement environment:
-1. Git clone into htdocs
-2. Make sure your general structure of files is as follows: XAMPP/xamppfiles/htdocs/COMP333_HW4
+1. Git clone entire COMP333_HW5 repo onto desktop
+2. Copy and paste (don't just move) Problem3 folder into XAMPP's htdocs folder
+    - Make sure your general structure of files is as follows: XAMPP/xamppfiles/htdocs/Problem3
 3. Setting up MySQL database, local XAMPP dev environment, and phpMyAdmin:
 
 - Screenshot of local XAMPP developement environment 
@@ -54,8 +55,10 @@ alt="Screenshot of ratings_table"
 />
 4. Through XAMPP, make sure MySQL Database and Apache Web Server are running
 
-# How to run the code:
+# How to run unit tests:
 Make sure you are running MySQL Database through XAMPP to connect to the database for when runnning unit tests.</br>
+Once you are in the Problem3 folder in htdocs, cd into the test-project folder.</br>
+Run 'php vendor/bin/phpunit tests' which will run all 7 unit tests from the HW.
 
 # Folders and Files:
 ## Rest API/Model, View, Controller Architecture:
