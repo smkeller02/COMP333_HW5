@@ -30,6 +30,10 @@ NOTE: please see Problem3's README for specific backend set up, database set up,
 3. from there, cd into the test-project folder
 4. run 'php vendor/bin/phpunit tests'
 
+## Problem 4
+We will use the same frontend code from HW3 to run the unit testing with Jest: https://github.com/smkeller02/COMP333_HW3.
+Please read the 'How to test frontend using Jest' section of the README.md file of HW3 to run the test. The files with the tests are createuser.test.js and loginuser.test.js.
+
 # Folders and Files:
 - Problem1:
     - unit_testing_sample_code.py: sample code that came with the HW
