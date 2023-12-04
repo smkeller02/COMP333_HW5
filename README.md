@@ -34,6 +34,49 @@ NOTE: please see Problem3's README for specific backend set up, database set up,
 We will use the same frontend code from HW3 to run the unit testing with Jest: https://github.com/smkeller02/COMP333_HW3.
 Please read the 'How to test frontend using Jest' section of the README.md file of HW3 to run the test. The files with the tests are createuser.test.js and loginuser.test.js.
 
+## Problem 6
+We have not used generative AI tool to write the testing code itself. There would be a limitation in writing an accurate testing code tailored to one's specific structure and functionalities of the whole webapp code as everyone's is unique. However, I do believe that generative AI may be a potential tool that can help you get a head start by helping to understand how the Jest works and providing example unit testing codes of Jest. 
+
+Using the advantage of generative AI tool that accumulates myriad of information currently accessible on the Internet in a faster speed than an individual could do, we can potentially ask for the backbone of general unit testing code using Jest along with its breakdown information. 
+
+You may not be able to reproduce our unit testing code by solely relying on generative AI. But here is the general step to integrate generative AI and additional information I will provide.
+
+The code below is how you can use OpenAI (one example of generative AI) to get the backbone of Jest unit testing code (the procedure is what I learned from the DeltaLab class, but further information can be found in OpenAI documentation.)
+
+```
+# Install OpenAI package
+pip install openai
+```
+
+```
+# Set up OpenAi key to get the access
+import openai
+openai.api_key = 'your-api-key'
+```
+
+```
+# Create a function to generate answers to your future question/prompt
+def generate_test_case(prompt):
+    response = openai.Completion.create(
+        engine="text-davinci-002",
+        prompt=prompt,
+        max_tokens=200,
+        n=1,
+        stop=None,
+        temperature=0.7
+    )
+    return response.choices[0].text.strip()
+```
+
+```
+# Example Usage
+prompt = "Provide backbone of Jest testing code with the breakdown."
+test_case = generate_test_case(prompt)
+print(test_case)
+```
+
+When I tested this, it gives a correct structure. However, building from this backbone need more understanding of the existing code we are testing. To reproduce our testing code, you may need to look into our code and figure out the test data or input values. For instance, in the password mismatch test for createuser.test.js, I specifically mentioned mismatched passwords. This may not be applicable to other codes, and thus need further understanding of the structure and design of the code to write a complete test case code. 
+
 # Folders and Files:
 - Problem1:
     - unit_testing_sample_code.py: sample code that came with the HW
