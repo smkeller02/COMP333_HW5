@@ -35,7 +35,7 @@ We will use the same frontend code from HW3 to run the unit testing with Jest: h
 Please read the 'How to test frontend using Jest' section of the README.md file of HW3 to run the test. The files with the tests are createuser.test.js and loginuser.test.js.
 
 ## Problem 5
-
+Using GitHub Actions, we set up the Continuous Integration for frontend unit tests. You will be able to find the CI running successfully on our frontend unit test codes in the following repository: https://github.com/smkeller02/COMP333_HW5_Problem5.
 
 
 ## Problem 6
