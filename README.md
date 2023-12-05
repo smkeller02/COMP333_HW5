@@ -79,7 +79,7 @@ test_case = generate_test_case(prompt)
 print(test_case)
 ```
 
-When I tested this, it gives a correct structure. However, building from this backbone need more understanding of the existing code we are testing. To reproduce our testing code, you may need to look into our code and figure out the test data or input values. For instance, in the password mismatch test for createuser.test.js, I specifically mentioned mismatched passwords. This may not be applicable to other codes, and thus need further understanding of the structure and design of the code to write a complete test case code. 
+When I tested this, it gives a correct structure. However, building from this backbone need more understanding of the existing code we are testing. To reproduce our testing code, you may need to look into our code and figure out the test data or input values now that we have the backbone from providing generative AI with the prompt, "Provide backbone of Jest testing code with the breakdown." For instance, in the password mismatch test for createuser.test.js, I specifically mentioned mismatched passwords. This may not be applicable to other codes, and thus need further understanding of the structure and design of the code to write a complete test case code. 
 
 # Folders and Files:
 - Problem1:
